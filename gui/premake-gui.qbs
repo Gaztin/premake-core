@@ -1,5 +1,3 @@
-import qbs.FileInfo
-
 QtApplication
 {
 	Depends { name: "Qt.widgets" }
@@ -10,6 +8,4 @@ QtApplication
 		"MainWindow.h",
 		"MainWindow.ui",
 	]
-
-	install: true
 }
