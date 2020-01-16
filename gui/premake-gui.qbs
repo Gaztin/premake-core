@@ -21,6 +21,7 @@ QtApplication
 			"Ole32.lib",
 		]
 	}
+
 	files: [
 		"../contrib/lua/src/lapi.c",
 		"../contrib/lua/src/lapi.h",
