@@ -23,20 +23,6 @@ QtApplication
 		]
 	}
 
-	Group {
-		condition: File.exists( "../src/scripts.c" )
-		files: [
-			"../src/scripts.c"
-		]
-	}
-
-	Properties {
-		condition: !File.exists( "../src/scripts.c" )
-		cpp.defines: [
-			"PREMAKE_NO_BUILTIN_SCRIPTS",
-		]
-	}
-
 	files: [
 		"../contrib/lua/src/lapi.c",
 		"../contrib/lua/src/lapi.h",
@@ -149,6 +135,7 @@ QtApplication
 		"../src/host/string_startswith.c",
 		"../src/host/term_textColor.c",
 		"../src/host/zip_extract.c",
+		"../src/scripts.c",
 		"main.cpp",
 		"MainWindow.cpp",
 		"MainWindow.h",
