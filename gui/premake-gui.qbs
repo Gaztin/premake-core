@@ -1,3 +1,5 @@
+import qbs.File
+
 QtApplication
 {
 	name: "Premake GUI"
@@ -11,9 +13,6 @@ QtApplication
 			"../contrib/luashim/",
 			"../src/host/",
 		]
-		cpp.defines: [
-			"PREMAKE_NO_BUILTIN_SCRIPTS",
-		]
 	}
 
 	Properties {
@@ -21,6 +20,20 @@ QtApplication
 		cpp.staticLibraries: [
 			"Advapi32.lib",
 			"Ole32.lib",
+		]
+	}
+
+	Group {
+		condition: File.exists( "../src/scripts.c" )
+		files: [
+			"../src/scripts.c"
+		]
+	}
+
+	Properties {
+		condition: !File.exists( "../src/scripts.c" )
+		cpp.defines: [
+			"PREMAKE_NO_BUILTIN_SCRIPTS",
 		]
 	}
 
