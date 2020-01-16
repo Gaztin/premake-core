@@ -1,5 +1,7 @@
 QtApplication
 {
+	name: "Premake GUI"
+
 	Depends { name: "Qt.widgets" }
 
 	Properties {
