@@ -14,6 +14,7 @@ ipch
 src/scripts.c
 **.lnt
 **.vlstatus
+build-premake-gui-*
 
 Makefile
 *.make
