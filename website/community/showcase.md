@@ -19,6 +19,7 @@ Be sure to also check out our **[project sponsors](https://opencollective.com/pr
 * [Simlaps.com](http://www.simlaps.com)
 * [Utomik](https://www.utomik.com/)
 * [WhiteMoonDreams](http://www.whitemoondreams.com/)
+* [Tension](https://www.tension.se/)
 
 ## Projects Using Premake ##
 
